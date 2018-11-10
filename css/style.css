@@ -7292,7 +7292,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: #000;
+  color: rgba(255, 255, 255, 0.87);
   font-weight: 400; }
 
 .text-primary {
@@ -7368,7 +7368,7 @@ h1, h2, h3, h4, h5,
     color: rgba(255, 255, 255, 0.5); }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: gray !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
