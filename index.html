@@ -1,374 +1,705 @@
 <!DOCTYPE html>
-<html class="cspio">
+<html lang="en">
 
 <head>
-    <!-- TODO INJECT THE EMAIL AND LINK ALL ACCOUNTS TO THE WEBSITE AND THE EMAIL-->
-	
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Coming Soon Page</title>
+  <title>Cornerstone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="generator" content="comingsoonpage.com 1.0.0" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/favicon.ico">
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="My Coming Soon Page" />
-    <meta property="og:description" content="" />
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800" rel="stylesheet">
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Bootstrap and default Style -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://static.comingsoonpage.com/cspio-assets/1.0.0/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Google Fonts -->
-    <link class="gf-headline" href='https://fonts.googleapis.com/css?family=Pacifico:400&subset=' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/aos.css">
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
 
-    <!-- Calculated Styles -->
-    <style type="text/css">
-        html {
-            height: 100%;
-            overflow: hidden;
-        }
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-        body {
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-        }
 
-        html {
-            height: 100%;
-            background: #e9e6e6;
-            background-image: url("background.jpg");
-            
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
 
-        #cspio-page {
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        .flexbox #cspio-page {
-            align-items: center;
-            justify-content: center;
-        }
-
-        .cspio body {
-            background: transparent;
-        }
-
-        .cspio body,
-        .cspio body p {
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-style: ;
-            font-size: 20px;
-            line-height: 1.50em;
-            color: #ffffff;
-        }
-
-        ::-webkit-input-placeholder {
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-
-       
-
-        :-ms-input-placeholder {
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-
-        :-moz-placeholder {
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-
-        .cspio h1,
-        .cspio h2,
-        .cspio h3,
-        .cspio h4,
-        .cspio h5,
-        .cspio h6 {
-            font-family: 'Pacifico';
-            color: #ffffff;
-        }
-
-        #cspio-headline {
-            font-family: 'Pacifico';
-            font-weight: 400;
-            font-style: ;
-            font-size: 48px;
-            color: #ffffff;
-            line-height: 1.00em;
-        }
-
-        .cspio button {
-            font-family: Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-style: ;
-        }
-
-        .cspio a,
-        .cspio a:visited,
-        .cspio a:hover,
-        .cspio a:active {
-            color: #ffffff;
-        }
-
-        #cspio-socialprofiles a {
-            color: #ffffff;
-        }
-
-        .cspio .btn-primary,
-        .cspio .btn-primary:focus,
-        .gform_button,
-        #mc-embedded-subscribe,
-        .submit-button {
-            color: black;
-            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-            background-color: #F8B528;
-            background-image: -moz-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: -ms-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#d9d9d9));
-            background-image: -webkit-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: -o-linear-gradient(top, #ffffff, #d9d9d9);
-            background-image: linear-gradient(top, #ffffff, #d9d9d9);
-            background-repeat: repeat-x;
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d9d9d9', GradientType=0);
-            border-color: #d9d9d9 #d9d9d9 #b3b3b3;
-            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-            *background-color: #d9d9d9;
-            filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-        }
-
-        .cspio .btn-primary:hover,
-        .cspio .btn-primary:active,
-        .cspio .btn-primary.active,
-        .cspio .btn-primary.disabled,
-        .cspio .btn-primary[disabled],
-        .cspio .btn-primary:focus:hover,
-        .cspio .btn-primary:focus:active,
-        .cspio .btn-primary:focus.active,
-        .cspio .btn-primary:focus.disabled,
-        .cspio .btn-primary:focus[disabled],
-        #mc-embedded-subscribe:hover,
-        #mc-embedded-subscribe:active,
-        #mc-embedded-subscribe.active,
-        #mc-embedded-subscribe.disabled,
-        #mc-embedded-subscribe[disabled] {-->
-            background-color: #d9d9d9;
-            *background-color: #cccccc;
-        }
-
-        .cspio .btn-primary:active,
-        .cspio .btn-primary.active,
-        .cspio .btn-primary:focus:active,
-        .cspio .btn-primary:focus.active,
-        .gform_button:active,
-        .gform_button.active,
-        #mc-embedded-subscribe:active,
-        #mc-embedded-subscribe.active {
-            background-color: #bfbfbf;
-        }
-
-        .form-control,
-        .progress {
-            background-color: rgba(255, 255, 255, 0.85);
-        }
-
-        #cspio-progressbar span,
-        .countdown_section {
-            color: black;
-            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-        }
-
-        .cspio .btn-primary:hover,
-        .cspio .btn-primary:active {
-            color: black;
-            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
-            border-color: #e6e6e6;
-        }
-
-        .cspio input[type='text']:focus {
-            webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 217, 217, 0.6);
-            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 217, 217, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(217, 217, 217, 0.6);
-        }
-
-        #cspio-content {
-            display: none;
-            max-width: 600px;
-            background-color: #000000;
-            -webkit-border-radius: 2px;
-            border-radius: 2px;
-            -moz-background-clip: padding;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
-            background-color: transparent;
-        }
-
-        .cspio .progress-bar,
-        .countdown_section,
-        .cspio .btn-primary,
-        .cspio .btn-primary:focus,
-        .gform_button {
-            background-image: none;
-            text-shadow: none;
-        }
-
-        .cspio input,
-        .cspio input:focus {
-            -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-        }
-
-        #cspio-page {
-            background: -moz-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 37%, rgba(0, 0, 0, 0) 68%, rgba(0, 0, 0, 0) 100%);
-            background: -webkit-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 37%, rgba(0, 0, 0, 0) 68%, rgba(0, 0, 0, 0) 100%);
-            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.2) 37%, rgba(0, 0, 0, 0) 68%, rgba(0, 0, 0, 0) 100%);
-        }
-
-        .cspio body {
-            background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.23) 100%);
-            background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.23) 100%);
-            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.23) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#3b000000', GradientType=1);
-        }
-
-        #cspio-subscribe-btn {
-            background: transparent;
-            border: 1px solid #fff !important;
-            color: #fff;
-        }
-
-        #cspio-subscribe-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            color: #fff;
-        }
-
-        #cspio-credit img {
-            margin-left: auto;
-            margin-right: auto;
-            width: 125px;
-            margin-top: -4px;
-        }
-
-        #cspio-credit {
-            font-size: 11px;
-        }
-    </style>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Modernizr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    <!-- Google Analytics Code Goes Here-->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="cspio-page">
-        <div id="cspio-content">
 
-            <img id="logo" src="logo.png" height="250" width="250">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/IMG_1058.PNG" alt="Cornerstone" style="width:100px;height:100px;"
+          href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-            <h1 id="cspio-headline">Coming Soon</h1>
-            <h3 class='id="cspio-headline' id="demo"></h3>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="sermons.html" class="nav-link">Sermons</a></li>
 
-            <div id="cspio-description">Get ready! Something really cool is coming!</div>
-
-            <form id="cspio-form" action="" method="post">
-                <div id="cspio-field-wrapper">
-                    <div class="row">
-                        <div class="col-md-12 seperate">
-                            <div class="input-group"><input id="cspio-email" name="EMAIL" class="form-control input-lg form-el"
-                                    type="email" placeholder="Email" required />
-                                <span class="input-group-btn"><button id="cspio-subscribe-btn" type="submit" class="btn btn-lg btn-primary form-el noglow">Notify
-                                        Me</button></span></div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
-            <span id="cspio-privacy-policy-txt">We promise to never spam you.</span>
-
-            <div id="cspio-socialprofiles">
-                <a href="https://www.facebook.com/Cornerstone-Christian-Centre-1128159653937671/" target="_blank"><i class="fa fa-facebook-official fa-2x" style="color:#5E3B93"></i></a>
-                <a href="mailto:" target="_blank"><i class="fa fa-envelope fa-2x" style="color:#5E3B93"></i></a>
-            </div>
-
-
-
-        </div><!-- end of #cspio-content -->
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- END nav -->
+
+  <section id="home" class="video-hero js-fullheight" style="height: 700px; background-image: url(images/image1.jpg);   background-size:cover; background-position: center center;background-attachment:fixed;"
+    data-section="home">
+    <div class="overlay js-fullheight"></div>
+    <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=5m--ptwd_iI',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default'}"></a>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+        data-scrollax-parent="true">
+        <div class="col-md-10 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Revealing<strong> Christ</strong>
+            in You </h1>
+          <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="contact.html" class="btn btn-primary btn-outline-white px-4 py-3">I
+              want to be Saved</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-bible-study">
+    <div class="container-wrap">
+      <div class="col-md-12 wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-md-flex">
+              <div class="one-forth ftco-animate">
+                <h3>New Venue Launch</h3>
+                <p>Isaiah 54:2 "Enlarge the place of your tent, stretch your tent curtains wide, do not hold back;
+                  lengthen your cords, strengthen your stakes. </p>
+              </div>
+              <div class="one-half d-md-flex align-items-md-center ftco-animate">
+                <div class="countdown-wrap">
+                  <p class="countdown d-flex">
+                    <span id="days"></span>
+                    <span id="hours"></span>
+                    <span id="minutes"></span>
+                    <span id="seconds"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section-2">
+    <div class="container-fluid">
+      <div class="section-2-blocks-wrapper d-flex row no-gutters">
+        <div class="img col-md-6 ftco-animate" style="background-image: url('images/pastors1.jpg');">
+          <!-- <a href="https://vimeo.com/45830194" class="button popup-vimeo"><span class="ion-ios-play"></span></a> -->
+        </div>
+        <div class="col-md-6 ftco-animate">
+          <div class="text text-inner text-center align-self-start">
+
+            <!-- Need to make this header bigger and bolder like OUr Leaders header -->
+            <h2 class="mb-4">Meet Our Pastors</h2>
+            <p>Pastor Samuel Dove is founder and Lead Pastor of Cornerstone Christian Centre, which was established in
+              June of 2016. His calling and passion is to win people to Christ, bring believers into full maturity of
+              their walk with God, train, raise and mentor leaders in the church by preaching a practical gospel.
+              <br>
+              <p>Pastor Samuel Dove was brought up in Soweto and is married to Pastor Maleepile Dove...</p>
+              <p><a href="about.html" class="btn btn-primary">Learn More</a></p>
+              <!---In their 10 years of marriage, God has blessed them with a son, Bohlale.</p>
+             <p>Pastor Samuel Dove has a passion for the local church. He believes that “the church is the hope of the world” and that the church needs to align itself with Christ’s mission to preach the gospel to all and win people to Christ, to be the extension of God’s love in ministering to the pain and hurt of its communities and to build prevailing churches.</p>
+             <p>Through God's grace, Pastor Samuel Dove pastors and teaches a practical Word of God, serves his community and is passionate about God’s work.</p>
+             <p>Connect with Pastor Samuel Dove on <a href="https://web.facebook.com/samuel.dove.31">Facebook</a>.</p> -->
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row no-gutters justify-content-center mb-5 pb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Sermons</span>
+          <h2 class="mb-4">Watch our sermons</h2>
+          <p>A practical gospel is what we beleive in. Grow your walk with Jesus by watching and listening to uplifting
+            practical words by Pastor Samuel Dove</p>
+        </div>
+      </div>
 
 
-    <script>
-        // Animate Delay
-        setTimeout(function () { jQuery("#cspio-content").show().addClass('animated fadeIn'); }, 250);
+      <div class="row">
+        <div class="col-md-6 ftco-animate">
+          <div class="sermons">
+            <a href="https://www.youtube.com/watch?v=qr5JU6qdJv8&t=1629s" class="img  mb-3 d-flex justify-content-center align-items-center"
+              style="background-image: url(images/image1.jpg);">
+              <div class="icon d-flex justify-content-center align-items-center">
+                <span class="icon-play"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h3><a href="#">Wait on the Lord</a></h3>
+              <span class="position">Pastor. Samuel Dove</span>
+              <p> Pastor Samuel reminds the saints about the importance of waiting on the Lord. If you have been
+                praying for a breakthrough in some area of your life, watch this video, it will renew your strength
+                through the Holy Spirit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ftco-animate">
+          <div class="sermons">
+            <a href="https://www.youtube.com/watch?v=akpqIt7mvDo&t=656s" class="img mb-3 d-flex justify-content-center align-items-center"
+              style="background-image: url(images/IMG_6216.jpg);">
+              <div class="icon d-flex justify-content-center align-items-center">
+                <span class="icon-play"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h3><a href="#">God is a Good God</a></h3>
+              <span class="position">Pastor. Samuel Dove</span>
+              <p>Pastor Samuel uncomplicates the so called 'complicated' gospel. The general message is about how God
+                did not send His Son to condemn you, but to save you</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ftco-animate">
+          <div class="sermons">
+            <a href="https://www.youtube.com/watch?v=VgWqRW0goIk" class="img mb-3 d-flex justify-content-center align-items-center"
+              style="background-image: url(images/table.JPG);">
+              <div class="icon d-flex justify-content-center align-items-center">
+                <span class="icon-play"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h3><a href="#">The Table is Ready</a></h3>
+              <span class="position">Pastor Samuel Dove</span>
+              <p>A powerful message about the God who invites everyone to partake in His Kingdom.
 
-        // Reseize	
-        function resize() {
-            $('head').append("<style id='form-style' type='text/css'></style>");
-            $('#form-style').html('.cspio .input-group-btn, .cspio .input-group{display:block;width:100%;}.cspio #cspio-subscribe-btn{margin-left:0;width:100%;display:block;}.cspio .input-group .form-control:first-child, .cspio .input-group-addon:first-child, .cspio .input-group-btn:first-child>.btn, .cspio .input-group-btn:first-child>.dropdown-toggle, .cspio .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {border-bottom-right-radius: 4px;border-top-right-radius: 4px;}.cspio .input-group .form-control:last-child, .cspio .input-group-addon:last-child, .cspio .input-group-btn:last-child>.btn, .cspio .input-group-btn:last-child>.dropdown-toggle, .cspio .input-group-btn:first-child>.btn:not(:first-child) {border-bottom-left-radius: 4px;border-top-left-radius: 4px;}');
-        }
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ftco-animate">
+          <div class="sermons">
+            <a href="https://www.youtube.com/watch?v=-cbC5dpil68" class="img mb-3 d-flex justify-content-center align-items-center"
+              style="background-image: url(images/newimage.JPG);">
+              <div class="icon d-flex justify-content-center align-items-center">
+                <span class="icon-play"></span>
+              </div>
+            </a>
+            <div class="text">
+              <h3><a href="#">Revealing Christ in Us: Intro</a></h3>
+              <span class="position">Cornerstone Christian Centre</span>
+              <p>Revealing Christ in us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-center">
+          <p><a href="sermons.html" class="btn btn-primary btn-outline-primary p-3">Watch all sermons</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        $('#cspio-content').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-            function () {
-                var width = $('#cspio-field-wrapper').width();
-                if (width < 480 && width != 0) {
-                    resize();
-                }
-            }
-        );
-    </script>
+  <!-- <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Read, Get Inspired, and Share Your Story</span>
+            <h2 class="mb-4">Testimonies</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Member</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Volunteer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Pastor</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Guest</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item text-center">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="name">Dennis Green</p>
+                    <span class="position">Pastor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <!-- <section class="ftco-section ftco-counter" id="section-counter">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2>Church Achievements</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="20254">0</strong>
+                <span>Churches around the world</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="4200000">0</strong>
+                <span>Members around the globe</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                <strong class="number" data-number="8600000">0</strong>
+                <span>Save life &amp; Donations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <section class="ftco-section-2 bg-light">
+    <div class="container-fluid">
+      <div class="row no-gutters d-flex">
+        <div class="col-md-6 img d-flex justify-content-end align-items-center" style="background-image: url(images/pastor_sam1.jpg);">
+          <div class="col-md-6 heading-section text-sm-center text-md-right heading-section-white ftco-animate mr-md-5 mt-md-5">
+            <h2>Our latest events</h2>
+            <p>"I was glad when they say unto me, Let us go into the house of the LORD."</p>
+            <p><b>Psalm 122:1</p></b>
+            <p><a href="events.html" class="btn btn-primary py-3 px-4">View Events</a></p>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="event-wrap">
+              
+            <div class="event-entry d-flex ftco-animate">
+              <div class="meta mr-4">
+                 
+                <p>
+                  <span>24</span>
+                  <span>Novemember 2018</span>
+                </p>
+              </div>
+              <div class="text">
+                <h3 class="mb-2"><a href="events.html">Saturday Teachings</a></h3>
+                <p class="mb-4"><span>15:00 pm Once every month. Last Saturday of each month.</span></p>
+                <a href="events.html" class="img" style="background-image: url(images/Teachings.JPG);"></a>
+              </div>
+            </div>
+            <div class="event-entry d-flex ftco-animate">
+              <div class="meta mr-4">
+                <p>
+                  <span>02</span>
+                  <span>December 2018</span>
+                </p>
+              </div>
+              <div class="text">
+                <h3 class="mb-2"><a href="events.html">New Venue Launch</a></h3>
+                <p class="mb-4"><span>10:00 at Cnr 12 Messelaar and Van Wyk street</span></p>
+                <a href="events.html" class="img" style="background-image: url(images/newvenue3.jpg);"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("NOV 10, 2018 23:59:25").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get todays date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    </script>
+
+  <!-- <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <span class="subheading">Blog</span>
+            <h2>Recent Blog</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="100">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="200">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-3">
+                  <div><a href="#">July 12, 2018</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <section class="ftco-section ftco-counter" id="section-counter">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-6 text-center heading-section ftco-animate">
+          <h2>Our Ministries</h2>
+          <p>We encourage all members to participate in any ministry of helps of their choice and also take part in
+            their relevant fellowship ministires</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+                <i class="fas fa-dove fa-7x" style="color:rgb(86, 16, 116)"></i>
+                <br>
+              <h3>Fellowship</h3>
+              <span>Home Cell</span>
+              <span>Youth Fellowship</span>
+              <span>Womens Fellowship</span>
+              <span>Mens Fellowship</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+                <i class="fas fa-hands-helping fa-7x" style="color:rgb(86, 16, 116)"></i>
+               
+              <h3>Ministries of Help</h3>
+            
+              <span>Home Cell</span>
+              <span>Ushers</span>
+              <span>Hospitality</span>
+              <span>Councelling</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <i class="fas fa-drum fa-7x" style="color:rgb(86, 16, 116)"></i>
+              <h3>Worship</h3>
+              <span>Worshipping Team</span>
+              <span>Technical Team</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 text-center">
+              <div class="text">
+                  <i class="fas fa-child fa-7x" style="color:rgb(86, 16, 116)"></i>
+                <h3>Childrens Ministry</h3>
+                <span>We have a fun</span>
+                <span>Sunday School</span>
+  
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-6 text-center heading-section ftco-animate">
+          <span class="subheading">Our Branches</span>
+          <h2 class="mb-4">We are close to you</h2>
+          <p>Chose from one our exciting branches and join us on weekends & weekdays for a practical Word of God.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services d-block text-center">
+            <div class="d-flex justify-content-center">
+              <div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-planet-earth"></span></div>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Roodeport Branch</h3>
+
+              <span class="icon icon-map-marker"></span><span class="text">23 Van Wyk St, Roodepoort, Johannesburg,
+                1724</span>
+              <p>Saturday Teachings: 13:00 - 16:00</p>
+              <p>Sunday Service: 10:00 - 13:30</p>
+              <p>Homecell: 18:30 - 20:00 (contact us for <a href="contact.html">more info</a>)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services d-block text-center">
+            <div class="d-flex justify-content-center">
+              <div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-maternity"></span></div>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Kensington Branch</h3>
+              <span class="icon icon-map-marker"></span><span class="text">Corner Roberts Ave & Ivanhoe St, Kensington,
+                Johannesburg, 2094</span>
+              <p>Sunday Service: 08:00 - 11:00</p>
+              <p>Homecell: 18:30 - 20:00 (contact us for <a href="contact.html">more info</a>)</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services d-block text-center">
+            <div class="d-flex justify-content-center">
+              <div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-pray"></span></div>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Prayer Request</h3>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services d-block text-center">
+            <div class="d-flex justify-content-center">
+              <div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-podcast"></span></div>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Podcasts</h3>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section-parallax">
+    <div class="parallax-img d-flex align-items-center">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2>Subcribe to our Newsletter</h2>
+            <p>We want to keep you updated with new events, updates and more.</p>
+            <div class="row d-flex justify-content-center mt-5">
+              <div class="col-md-6">
+                <form action="#" class="subscribe-form">
+                  <div class="form-group">
+                    <span class="icon icon-paper-plane"></span>
+                    <input type="text" class="form-control" placeholder="Enter email address">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <img src="images/IMG_1058.PNG" alt="Cornerstone" style="width:200px;height:200px;" href="index.html"><a
+              href="index.html">
+              <p>Revealing Christ in Us</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li><a href="events.html" class="py-2 d-block">Events</a></li>
+              <li><a href="about.html" class="py-2 d-block">Ministries</a></li>
+              <li><a href="sermons.html" class="py-2 d-block">Sermons</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Contact Information</h2>
+            <ul class="list-unstyled">
+              <li><a href="https://goo.gl/maps/ujqHEiwDqdS2" class="py-2 d-block">Roodeport, No. 23 Columbia House, Cnr
+                  Van Wyk and Hogson Street</a></li>
+              <li><a href="#" class="py-2 d-block">+27733669610</a></li>
+              <li><a href="#" class="py-2 d-block">info.cornerstonecentreSA@gmail.com</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon icon-map-marker"></span><span class="text">23 Van Wyk St, Roodepoort,
+                    Johannesburg, 1724</span></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+27733669610</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info.cornerstonecentre1@gmail.com</span></a></li>
+                <li><span class="icon icon-clock-o"></span><span class="text"> Sunday 10:00am - 13:30:00pm</span></li>
+              </ul>
+            </div>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+              <li class="ftco-animate"><a href="https://twitter.com/CornerstoneCh"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/Cornerstone-Christian-Centre-1128159653937671/"><span
+                    class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/cornerstonechristiancentre/?hl=en"><span
+                    class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.youtube.com/channel/UClW_n8G6_ltf8bwLxqh2_Ag"><span class="icon-youtube"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://datalwazi.co.za" target="_blank">DataLwazi</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
